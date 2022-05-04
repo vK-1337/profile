@@ -1,0 +1,158 @@
+body {
+  background-image:url('https://images.pexels.com/photos/866351/pexels-photo-866351.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+  font-family: 'Questrial', sans-serif;
+}
+
+span {
+  color: ;
+}
+.cta {
+  display: flex;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  background: none;
+  border: none;
+  padding: 12px 18px;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(calc(100% + 4px));
+  width: 45px;
+  height: 45px;
+  background: #1da5a5;
+  border-radius: 50px;
+  transition: transform .25s .25s cubic-bezier(0, 0, .5, 2), width .25s cubic-bezier(0, 0, .5, 2);
+  z-index: 0;
+}
+
+.cta:hover::before {
+  width: 100%;
+  transform: translateY(-50%) translateX(-18px);
+  transition: transform .25s cubic-bezier(0, 0, .5, 2), width .25s .25s cubic-bezier(0, 0, .5, 2);
+}
+
+.cta i {
+  margin-left: 5px;
+  transition: transform .25s .4s cubic-bezier(0, 0, .5, 2);
+}
+
+.cta span {
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.cta:hover i {
+  transform: translateX(3px);
+}
+
+h1 {
+  color: #1da5a5;
+}
+
+h2 {
+color: #1da5a5;
+}
+
+.img-circle {
+  max-width: 20%;
+  border-radius: 250px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-white {
+  background: rgb(236, 231, 231);
+  padding: 30px;
+  border-radius: 10px;
+  margin: 50px 300px;
+  -webkit-box-shadow: 8px 11px 30px 1px #1a1a1a;
+  box-shadow: 8px 11px 30px 1px #222222;
+}
+
+.media-icons {
+  font-size: 35%;
+}
+
+#socials {
+  padding: 0px;
+}
+
+#black {
+  color: black;
+}
+
+#socials li {
+  display: inline;
+  list-style-type: none;
+  margin: 55px;
+  padding: 0px;
+}
+.icon {
+  display: inline-block;
+  font-size: 44px;
+  animation: float 5s ease-in-out
+  infinite;
+}
+
+.twitter-icon {
+  animation-delay: 1s;
+}
+
+.facebook-icon {
+  animation-delay: 2s;
+}
+
+.instagram-icon {
+  animation-delay: 3s;
+}
+
+.github-icon {
+  animation-delay: 4s;
+}
+
+a {
+color: black;
+text-decoration: none;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
