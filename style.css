@@ -73,9 +73,10 @@ color: #1da5a5;
   background: rgb(236, 231, 231);
   padding: 30px;
   border-radius: 10px;
-  margin: 50px 300px;
   -webkit-box-shadow: 8px 11px 30px 1px #1a1a1a;
   box-shadow: 8px 11px 30px 1px #222222;
+  width: 700px;
+  margin: 20px auto;
 }
 
 .media-icons {
@@ -138,15 +139,15 @@ text-decoration: none;
 
 @media (max-width: 960px) {
   /* Pour un écran < 960px, cette classe CSS s'applique */
-  .container {
-    width: 700px;
+  .card-white {
+    width: 600px;
   }
 }
 
 @media (max-width: 720px) {
   /* Pour un écran < 720px, cette classe CSS s'applique */
-  .container {
-    width: 500px;
+  .card-white {
+    width: 450px;
   }
 }
 
@@ -154,5 +155,9 @@ text-decoration: none;
   /* Pour un écran < 540px, cette classe CSS s'applique */
   .container {
     width: 300px;
+  }
+
+  .card-white {
+    width: 200px;
   }
 }
